@@ -43,5 +43,5 @@ Web Fonts	Used Google Fonts (Roboto).
 Content Variety	Includes text, images, video, and a table.
 Regex Validation	Newsletter form uses type="email" for validation.
 
-Github link: https://github.com/Hanna12674/Honey-Treats-Bakery.git
+Github link: https://github.com/Hanna12674/HoneyTreatsBakery.git
 
