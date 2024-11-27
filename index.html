@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey Treats Bakery</title>
+
+  <!-- Web Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Custom JS -->
+  <script defer src="js/home.js"></script>
+</head>
+
+<body>
+<header class="bg-primary text-white text-center py-3">
+  <h1>Honey Treats Bakery</h1>
+  <p id="greeting">Freshly baked goodness every day!</p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="products.html#cakes">Cakes</a></li>
+              <li><a class="dropdown-item" href="products.html#pastries">Pastries</a></li>
+              <li><a class="dropdown-item" href="products.html#bread">Bread</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container my-5">
+  <h2 class="text-center">Welcome to Honey Treats Bakery!</h2>
+  <p class="text-center">Where sweetness meets perfection.</p>
+
+  <!-- Grid Section -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <h5 class="card-title text-center">Delicious Cakes</h5>
+        <img alt="Cake" class="card-img-top" src="img/cakesdiff.jpg">
+        <div class="card-body">
+          <p class="card-text text-center">From classic chocolate to custom designs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <h5 class="card-title text-center">Fresh Bread</h5>
+        <img alt="Bread" class="card-img-top" src="img/breadonbasket.jpg">
+        <div class="card-body">
+          <p class="card-text text-center">Artisan bread baked fresh every morning.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <h5 class="card-title text-center">Tasty Pastries</h5>
+        <img alt="Pastry" class="card-img-top" src="img/pastery2.jpg">
+        <div class="card-body">
+          <p class="card-text text-center">Flaky, buttery, and perfect with coffee.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HTML Table -->
+  <h3 class="mt-5 text-center">Our Popular Products</h3>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Chocolate Cake</td>
+      <td>$25</td>
+      <td>A rich, moist chocolate cake perfect for any occasion.</td>
+    </tr>
+    <tr>
+      <td>Butter Croissant</td>
+      <td>$3</td>
+      <td>Flaky and buttery, great with coffee or tea.</td>
+    </tr>
+    <tr>
+      <td>French Baguette</td>
+      <td>$5</td>
+      <td>Freshly baked with a crispy crust and soft center.</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Video Section -->
+  <div class="video-container">
+    <h3>Watch Our Baking Process</h3>
+    <video controls width="600">
+      <source src="video/bread.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Newsletter Form -->
+  <h3 class="text-center">Subscribe to Our Newsletter</h3>
+  <form action="/subscribe" method="post" class="mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address:</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+  </form>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
